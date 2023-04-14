@@ -30,6 +30,12 @@ list* create_list(){
     return _list;
 }
 
+// Destroys the list passed as parameters and returns a new empty list
+list* reset_list(list* _list){
+    destroy_list(_list);
+    return create_list();
+}
+
 // Returns length of list
 int len(list* _list){
     return _list->size;

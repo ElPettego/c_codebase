@@ -26,6 +26,10 @@ int main(){
 
     print_list(list);
 
+    list = reset_list(list);
+
+    print_list(list);
+
     // res = str_list_to_str(list);
 
     log_mex(log, "INFO", int_to_str(len(list)));
